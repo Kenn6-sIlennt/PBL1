@@ -6,13 +6,13 @@ from cryptography.fernet import Fernet
 import base64
 
 app = Flask(__name__)
-app.secret_key = 'PBL'
+app.secret_key = '<use your secret key>'
 
 db_config = {
     'host': 'localhost',
     'user': 'root',
     'password': '',  
-    'database': 'newnotes'
+    'database': '<your database>'
 }
 
 key_path = os.path.join(os.path.dirname(__file__), "key.key")
